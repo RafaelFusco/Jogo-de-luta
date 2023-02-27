@@ -446,6 +446,7 @@ html, body {
   height: 98px;
   margin: 0;
   padding: 0;
+  background-position: bottom;
 }
 .arena .player {
   background-image: url("../../img/samurai.png");
@@ -454,6 +455,12 @@ html, body {
 .arena .bot {
   background-image: url("../../img/minotauro1.png");
   animation: monsterStop 5s infinite;
+}
+
+.chao {
+  height: 60px;
+  background-image: url("../../img/chao.png");
+  background-size: 100% 100%;
 }
 
 .containerB {
@@ -501,17 +508,19 @@ html, body {
   list-style: none;
 }
 .containerB .buttonsAndLog .log .luta {
-  height: 2rem;
+  margin: 0.5rem 0;
   color: #000;
 }
 .containerB .buttonsAndLog .log .round {
-  height: 2rem;
+  margin: 0.5rem 0;
   color: #000;
 }
 .containerB .buttonsAndLog .log .Samurai {
+  margin: 0.2rem 0;
   color: #0046be;
 }
 .containerB .buttonsAndLog .log .Monstro {
+  margin: 0.2rem 0;
   color: #ce0000;
 }
 .containerB .statistics {

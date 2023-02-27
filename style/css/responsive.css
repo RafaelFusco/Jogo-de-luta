@@ -91,6 +91,27 @@
 }
 
 @media (max-width: 540px) {
+  .chao {
+    height: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .chao {
+    height: 30px;
+  }
+}
+@media (max-width: 340px) {
+  .chao {
+    height: 30px;
+  }
+}
+@media (max-width: 280px) {
+  .chao {
+    height: 30px;
+  }
+}
+
+@media (max-width: 540px) {
   .containerB .buttonsAndLog {
     width: 125px;
   }

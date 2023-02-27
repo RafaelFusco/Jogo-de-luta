@@ -88,6 +88,7 @@ html, body
 
     .player, .bot
         @include size--marg(98px, 98px, 0, 0)
+        background-position: bottom
 
     .player
         @extend %anim-default
@@ -98,6 +99,11 @@ html, body
         @extend %anim-default
         background-image: url('../../img/minotauro1.png')
         animation: monsterStop 5s infinite
+
+.chao
+    height: 60px
+    background-image: url('../../img/chao.png')
+    background-size: 100% 100%
 
 .containerB
     @include display-direc(flex, row, center, null)
@@ -145,17 +151,19 @@ html, body
                 list-style: none
 
             .luta
-                height: 2rem
+                margin: 0.5rem 0
                 color: #000
 
             .round
-                height: 2rem
+                margin: 0.5rem 0
                 color: #000
                 
             .Samurai
+                margin: 0.2rem 0
                 color: #0046be
 
             .Monstro
+                margin: 0.2rem 0
                 color: #ce0000
         
     .statistics
