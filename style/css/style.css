@@ -472,7 +472,7 @@ html, body {
   transition-duration: 1s;
 }
 .containerB .buttonsAndLog .attacks {
-  width: 40%;
+  width: 100%;
   margin: 0.5rem;
 }
 .containerB .buttonsAndLog .attacks .attackButton1 {
@@ -535,7 +535,6 @@ html, body {
 .containerB .statistics .divPlacar {
   display: flex;
   flex-direction: row;
-  width: max-content;
   margin: 0.4rem 0;
 }
 .containerB .statistics .divPlacar .charPlacar, .containerB .statistics .divPlacar .monsterPlacar {

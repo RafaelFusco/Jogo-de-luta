@@ -1,92 +1,219 @@
 @import '_utilities'
 
 .fightArea
+    @include mobile-4
+        gap: 5px
+
+    @include mobile-5
+        gap: 5px
+
+    @include mobile-6
+        gap: 5px
+
     @include mobile-7
         gap: 5px
 
 #char,
 #monster
+    @include mobile-4
+        font-size: 0.5rem
+
+    @include mobile-5
+        font-size: 0.5rem
+
+    @include mobile-6
+        font-size: 0.5rem
+
     @include mobile-7
         font-size: 0.5rem
 
 .rounds
-    @include mobile-7    
+    @include mobile-4
+        font-size: 0.5rem
+
+    @include mobile-5
+        font-size: 0.5rem
+
+    @include mobile-6
+        font-size: 0.5rem
+
+    @include mobile-7
         font-size: 0.5rem
 
 .arena
 
     .player, .bot
+        @include mobile-4
+            width: 78px
+            height: 78px
+
+        @include mobile-5
+            width: 78px
+            height: 78px
+
+        @include mobile-6
+            width: 78px
+            height: 78px
+
         @include mobile-7
             width: 78px
             height: 78px
             
-
-
 .containerB
 
     .buttonsAndLog
+        @include mobile-4
+            width: 125px
+
+        @include mobile-5
+            width: 175px
+
+        @include mobile-6
+            width: 125px
+
         @include mobile-7
             width: 125px
 
         .attacks
+            @include mobile-4
+                width: max-content
+                margin: 0.2rem 0.5rem
+
+            @include mobile-5
+                width: max-content
+                margin: 0.2rem 0.5rem
+
+            @include mobile-6
+                width: max-content
+                margin: 0.2rem 0.5rem
+
             @include mobile-7
                 width: max-content
-                margin: 0.2rem auto
+                margin: 0.2rem 0.5rem
 
             .attackButton1
+                @include mobile-4
+                    font-size: 0.7rem
+
+                @include mobile-5
+                    font-size: 0.7rem
+                    
+                @include mobile-6
+                    font-size: 0.7rem
+
                 @include mobile-7
                     font-size: 0.7rem
             
             .revanche
-                @include mobile-7
-                    font-size: 0.7rem               
+                @include mobile-4
+                    font-size: 0.7rem
 
+                @include mobile-5
+                    font-size: 0.7rem
+                    
+                @include mobile-6
+                    font-size: 0.7rem
+
+                @include mobile-7
+                    font-size: 0.7rem
+            
         .log
+            @include mobile-4
+                width: 100px
+ 
+            @include mobile-5
+                width: 150px
+ 
+            @include mobile-6
+                width: 100px
+ 
             @include mobile-7
                 width: 100px
-
-            &::-webkit-scrollbar
-                
-
-            &::-webkit-scrollbar-thumb
                 
             li
+                @include mobile-4
+                    font-size: 0.6rem
+ 
+                @include mobile-5
+                    font-size: 0.6rem
+ 
+                @include mobile-6
+                    font-size: 0.6rem
+ 
                 @include mobile-7
                     font-size: 0.6rem
-
+ 
             .luta
                 
 
             .round
                 
-                
-            .Samurai
-
-
-            .Monstro
-
-
-
 
     .statistics
+        @include mobile-4
+            width: 100%
+            padding: 0 0.5rem
+        
+        @include mobile-5
+            width: 30%
+            padding: 0 0.5rem
+        
+        @include mobile-6
+            width: 100%
+            padding: 0 0.5rem
+        
         @include mobile-7
             width: 100%
             padding: 0 0.5rem
         
         h1
+            @include mobile-4
+                font-size: 0.9rem
+ 
+            @include mobile-5
+                font-size: 0.9rem
+ 
+            @include mobile-6
+                font-size: 0.9rem
+ 
             @include mobile-7
                 font-size: 0.9rem
-
+ 
         .divPlacar           
             
             .charPlacar, .monsterPlacar
                 
                 label
+                    @include mobile-4
+                        width: 80%
+                        font-size: 0.6rem
+                        
+                    @include mobile-5
+                        width: 80%
+                        font-size: 0.6rem
+                        
+                    @include mobile-6
+                        width: 80%
+                        font-size: 0.6rem
+                        
                     @include mobile-7
                         width: 80%
                         font-size: 0.6rem
                         
             strong
+                @include mobile-4
+                    margin: 0 0.3rem
+                    font-size: 0.5rem
+ 
+                @include mobile-5
+                    margin: 0 0.3rem
+                    font-size: 0.5rem
+ 
+                @include mobile-6
+                    margin: 0 0.3rem
+                    font-size: 0.5rem
+ 
                 @include mobile-7
                     margin: 0 0.3rem
                     font-size: 0.5rem
+ 

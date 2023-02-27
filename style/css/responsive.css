@@ -1,9 +1,42 @@
+@media (max-width: 540px) {
+  .fightArea {
+    gap: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .fightArea {
+    gap: 5px;
+  }
+}
+@media (max-width: 340px) {
+  .fightArea {
+    gap: 5px;
+  }
+}
 @media (max-width: 280px) {
   .fightArea {
     gap: 5px;
   }
 }
 
+@media (max-width: 540px) {
+  #char,
+#monster {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  #char,
+#monster {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  #char,
+#monster {
+    font-size: 0.5rem;
+  }
+}
 @media (max-width: 280px) {
   #char,
 #monster {
@@ -11,12 +44,45 @@
   }
 }
 
+@media (max-width: 540px) {
+  .rounds {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .rounds {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .rounds {
+    font-size: 0.5rem;
+  }
+}
 @media (max-width: 280px) {
   .rounds {
     font-size: 0.5rem;
   }
 }
 
+@media (max-width: 540px) {
+  .arena .player, .arena .bot {
+    width: 78px;
+    height: 78px;
+  }
+}
+@media (max-width: 425px) {
+  .arena .player, .arena .bot {
+    width: 78px;
+    height: 78px;
+  }
+}
+@media (max-width: 340px) {
+  .arena .player, .arena .bot {
+    width: 78px;
+    height: 78px;
+  }
+}
 @media (max-width: 280px) {
   .arena .player, .arena .bot {
     width: 78px;
@@ -24,19 +90,82 @@
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 540px) {
+  .containerB .buttonsAndLog {
+    width: 125px;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .buttonsAndLog {
+    width: 175px;
+  }
+}
+@media (max-width: 340px) {
   .containerB .buttonsAndLog {
     width: 125px;
   }
 }
 @media (max-width: 280px) {
+  .containerB .buttonsAndLog {
+    width: 125px;
+  }
+}
+@media (max-width: 540px) {
   .containerB .buttonsAndLog .attacks {
     width: max-content;
-    margin: 0.2rem auto;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .buttonsAndLog .attacks {
+    width: max-content;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .buttonsAndLog .attacks {
+    width: max-content;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 280px) {
+  .containerB .buttonsAndLog .attacks {
+    width: max-content;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .containerB .buttonsAndLog .attacks .attackButton1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .buttonsAndLog .attacks .attackButton1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .buttonsAndLog .attacks .attackButton1 {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 280px) {
   .containerB .buttonsAndLog .attacks .attackButton1 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 540px) {
+  .containerB .buttonsAndLog .attacks .revanche {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .buttonsAndLog .attacks .revanche {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .buttonsAndLog .attacks .revanche {
     font-size: 0.7rem;
   }
 }
@@ -45,14 +174,62 @@
     font-size: 0.7rem;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 540px) {
+  .containerB .buttonsAndLog .log {
+    width: 100px;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .buttonsAndLog .log {
+    width: 150px;
+  }
+}
+@media (max-width: 340px) {
   .containerB .buttonsAndLog .log {
     width: 100px;
   }
 }
 @media (max-width: 280px) {
+  .containerB .buttonsAndLog .log {
+    width: 100px;
+  }
+}
+@media (max-width: 540px) {
   .containerB .buttonsAndLog .log li {
     font-size: 0.6rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .buttonsAndLog .log li {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .buttonsAndLog .log li {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 280px) {
+  .containerB .buttonsAndLog .log li {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 540px) {
+  .containerB .statistics {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .statistics {
+    width: 30%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .statistics {
+    width: 100%;
+    padding: 0 0.5rem;
   }
 }
 @media (max-width: 280px) {
@@ -61,15 +238,66 @@
     padding: 0 0.5rem;
   }
 }
+@media (max-width: 540px) {
+  .containerB .statistics h1 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .statistics h1 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .statistics h1 {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 280px) {
   .containerB .statistics h1 {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 80%;
+    font-size: 0.6rem;
   }
 }
 @media (max-width: 280px) {
   .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
     width: 80%;
     font-size: 0.6rem;
+  }
+}
+@media (max-width: 540px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.3rem;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.3rem;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.3rem;
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 280px) {
