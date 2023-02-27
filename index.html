@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luta</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="startSize">
+        <div class="startDiv">
+            <div class="startInfo">
+                <label for="char">Seu nome</label>
+                <input type="text" placeholder="Samurai">
+                
+                <label for="monster">Seu inimigo</label>
+                <input type="text" placeholder="Minotauro">
+            </div>
+            <button class="start" onclick="start()">Iniciar</button>
+        </div>        
+    </div>
+
+    <div class="container1">
+
+        <div class="container2">
+
+            <div class="fightArea">
+                <div id="char">
+                    <div class="lifebar">
+                        <div class="bar" style="width: 10%"></div>
+                    </div>
+                    <div class="info">
+                        <strong class="name">--</strong>
+                        <div class="status">
+                            <details class="buffer" id="recup">
+                                <summary></summary>
+                                <p>Concentração: recupera vida equivalente a 50% do dano causado ! (apenas quando vida maxima estiver abaixo de 50%)</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounds"></div>
+    
+                <div id="monster">
+                    <div class="lifebar">
+                        <div class="bar" style="width: 10%"></div>
+                    </div>
+                    <div class="info">
+                        <strong class="name">--</strong>
+                        <div class="status">
+                            <details class="buffer" id="recup">
+                                <summary></summary>
+                                <p>Concentração: recupera vida equivalente a 50% do dano causado ! (apenas quando vida maxima estiver abaixo de 50%)</p>
+                            </details>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arena">
+                <div class="player"></div>
+                <div class="bot"></div>
+            </div>
+        </div>
+
+        <div class="containerB">
+
+            <div class="buttonsAndLog">
+                <div class="attacks">
+                    <button class="attackButton1">Atacar</button>
+                    <button class="revanche" disabled>Revanche</button>
+                </div>
+
+                <ul class="log"></ul>
+            </div>
+            <div class="statistics">
+                <h1>Placar</h1>
+                <div class="divPlacar">
+                    <div class="charPlacar">
+                        <label>Samurai</label>
+                        <label id="placar"></label>
+                    </div>
+                    
+                    <strong>X</strong>
+
+                    <div class="monsterPlacar">
+                        <label>Monster</label>
+                        <label id="placar"></label>
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+    </div>
+ 
+
+    <script src="js/classes.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+@keyframes attack
+    0%  
+        left: 0%
+        opacity: 0
+    20%
+        background-image: url('../../img/samurai-move.png')
+        opacity: 1
+    25%
+        left: 35%
+        background-image: url('../../img/samurai-attack.png')
+        opacity: 1  
+    50%
+        left: 35%
+        background-image: url('../../img/samurai-attack1.png')
+        opacity: 1  
+    65%
+        left: 35%
+        background-image: url('../../img/samurai-attack2.png')
+        opacity: 1
+    80%
+        left: 35%
+        opacity: 0
+    90%
+        background-image: url('../../img/samurai.png')
+        opacity: 1
+    100%
+        left: 0%
+
+@keyframes defen
+    0%
+        opacity: 0
+    20%
+        opacity: 0.5
+    25%
+        background-image: url('../../img/samurai-defen.png')
+        opacity: 1
+    50%
+        background-image: url('../../img/samurai-defen1.png')
+
+    75%
+        background-image: url('../../img/samurai-defen2.png')
+        opacity: 1
+    85%
+        background-image: url('../../img/samurai-defen3.png')
+        opacity: 0.5
+    95%
+        opacity: 0
+    100%
+        background-image: url('../../img/samurai.png')
+        opacity: 0.5
+
+@keyframes damage 
+    0%
+        background-image: url('../../img/samurai.png')
+    25%
+        background-image: url('../../img/samurai-damage.png')
+    50%
+        background-image: url('../../img/samurai.png')
+    75%
+        background-image: url('../../img/samurai-damage.png')
+    100%
+        background-image: url('../../img/samurai.png')
+
+@keyframes playerStop 
+    0%
+        background-image: url('../../img/samurai-resp.png')
+    25%
+        background-image: url('../../img/samurai-resp1.png')
+    50%
+        background-image: url('../../img/samurai-resp.png')
+    75%
+        background-image: url('../../img/samurai-resp.png')
+    100%
+        background-image: url('../../img/samurai-resp.png')
+
+@keyframes samuraiLose
+    0%
+        right: 0%
+        bottom: 0%
+        opacity: 0.2
+    50%
+        right: 10%
+        bottom: 40%
+        opacity: 0
+    100%
+        right: 15%
+        bottom: 0%
+        opacity: 0
+
+@keyframes samuraiRevanche
+    0%
+        right: 15%
+        bottom: 40%
+        opacity: 0
+    50%
+        right: 10%
+        bottom: 40%
+        opacity: 0
+    100%
+        right: 0%
+        bottom: 0%
+        opacity: 1
+
+@keyframes minotauroDamage 
+    0%
+        background-image: url('../../img/minotauro1.png')
+    25%
+        background-image: url('../../img/minotauro-damage.png')
+    50%
+        background-image: url('../../img/minotauro1.png')
+    75%
+        background-image: url('../../img/minotauro-damage.png')
+    100%
+        background-image: url('../../img/minotauro1.png')
+
+@keyframes minotauroAttack 
+    0%
+        right: 0%
+        bottom: 0%
+        opacity: 0.2
+    25%
+        right: 15%
+        bottom: 40%
+        opacity: 0
+    40%
+        right: 35%
+        bottom: 0%
+        background-image: url('../../img/minotauro.png')
+        opacity: 0.2
+    50%
+        right: 35%
+        bottom: 0
+        background-image: url('../../img/minotauro-attack1.png')
+        opacity: 1
+    60%
+        right: 35%
+        background-image: url('../../img/minotauro-attack2.png')
+    70%
+        right: 35%
+        bottom: 0%
+        background-image: url('../../img/minotauro-attack3.png')
+        opacity: 1
+    80%
+        right: 15%
+        bottom: 40%
+        opacity: 0
+    95%
+        right: 0%
+        bottom: 0%
+        opacity: 0.2
+    100%
+        background-image: url('../../img/minotauro.png')
+        opacity: 1
+
+@keyframes minotauroDefen 
+    0%
+        background-image: url('../../img/minotauro.png')
+    25%
+        background-image: url('../../img/minotauro-attack.png')
+    50%
+        background-image: url('../../img/minotauro-attack.png')
+    75%
+        background-image: url('../../img/minotauro-attack.png')
+    100%
+        background-image: url('../../img/minotauro.png')
+
+@keyframes monsterStop 
+    0%
+        background-image: url('../../img/minotauro.png')
+    25%
+        background-image: url('../../img/minotauro1.png')
+    50%
+        background-image: url('../../img/minotauro.png')
+    75%
+        background-image: url('../../img/minotauro1.png')
+    100%
+        background-image: url('../../img/minotauro.png')
+
+@keyframes monsterLose
+    0%
+        left: 0%
+        bottom: 0%
+        opacity: 0.2
+    50%
+        left: 10%
+        bottom: 40%
+        opacity: 0
+    100%
+        left: 15%
+        bottom: 0%
+        opacity: 0
+
+@keyframes minotauroRevanche 
+    0%
+        left: 15%
+        bottom: 40%
+        opacity: 0
+    50%
+        left: 10%
+        bottom: 40%
+        opacity: 0
+    100%
+        left: 0%
+        bottom: 0%
+        opacity: 1
+
+@keyframes rotate 
+    0%
+        background: #c8c8c8
+        box-shadow: inset 0 0 5px #000, 0 0 5px #bababa
+    25%
+        background: #000
+        box-shadow: 0 0 5px #000, inset 0 0 5px #bababa
+    50%
+        background: #000
+        box-shadow: 0 0 5px #000, inset 0 0 5px #bababa
+    60%
+        background: #c8c8c8
+        box-shadow: inset 0 0 5px #000, 0 0 5px #bababa
+    75%
+        background: #000
+        box-shadow: 0 0 5px #000, inset 0 0 5px #bababa
+    100%
+        background: #c8c8c8
+        box-shadow: inset 0 0 5px #000, 0 0 5px #bababa        

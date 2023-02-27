@@ -1,0 +1,212 @@
+@import '_mixins'
+@import '_placeholder'
+@import '_anim'
+    
+html, body
+    @include display-direc(flex, column, null, null)
+    @include size--marg(100%, 100vh, 0, 0)
+    font-family: 'VT323', monospace
+    font-size: 1.1rem
+
+.container1
+    @include display-direc(flex, column, null, null)
+    @include size--marg(auto, 100%, null, null)
+    background-color: #3C202F
+
+.container2
+    @include display-direc(flex, column, center, null)
+    @include size--marg(100%, 100%, null, null)
+    background-image: url('../../img/montain.png')
+    background-repeat: no-repeat
+    background-size: 100% 100%
+
+.fightArea
+    display: flex
+    margin: 5px
+    gap: 20px
+    opacity: 0
+    transition-duration: 1s
+
+#char,
+#monster
+    width: 100%
+    flex: 1
+
+.lifebar
+    width: 100%
+    height: 10px
+    background-color: #7373739a
+    backdrop-filter: blur( 13.5px )
+    border: 1px solid #000000
+
+    .bar
+        width: 100%
+        height: inherit
+        background-color: red
+
+.info
+    @include display-direc(flex, row, null, null)
+    @extend %info-round
+    width: 100%
+    height: inherit
+    gap: 10px
+    border-top: none
+
+    strong
+        margin-left: 0.5rem
+
+    .status
+        @include display-direc(flex, null, null, center)
+        @include size--marg(10px, auto, null, null)
+
+        .buffer
+            @include size--marg(10px, 10px, 0 5px, null) 
+            display: none
+            border-radius: 50%
+
+            p
+                @include size--marg(21rem, null, 0, 0.3rem)
+                @extend %info-round
+                font-size: 0.8rem
+
+            summary
+                opacity: 0   
+            
+        #recup
+            background-color: green
+
+.rounds
+    @include display-direc(flex, null, center, center)
+    @extend %info-round
+    width: max-content
+    padding: 0.2rem
+    font-weight: bold
+
+.arena
+    @include display-direc(flex, null, space-around, flex-end)
+    @include size--marg(100%, 100%, null, null)
+
+    .player, .bot
+        @include size--marg(98px, 98px, 0, 0)
+
+    .player
+        @extend %anim-default
+        background-image: url('../../img/samurai.png')
+        animation: playerStop 5s infinite
+    
+    .bot
+        @extend %anim-default
+        background-image: url('../../img/minotauro1.png')
+        animation: monsterStop 5s infinite
+
+.containerB
+    @include display-direc(flex, row, center, null)
+    margin: 0 1rem
+
+    .buttonsAndLog
+        @include display-direc(flex, column, null, null)
+        @include size--marg(50%, max-content, 1rem 0, null)
+        @extend %comp-externo
+        opacity: 0
+        transition-duration: 1s
+
+        .attacks
+            @include size--marg(40%, null, 0.5rem, null)
+
+            .attackButton1
+                @extend %button-style
+                transition-duration: 0.2s
+
+                &:disabled   
+                    @extend %button-disabled
+            
+            .revanche
+                @extend %button-style
+                transition-duration: 0.2s
+
+                &:disabled   
+                    @extend %button-disabled
+
+        .log
+            @include size--marg(null, 180px, 10px, 0)
+            @extend %comp-interno
+            overflow-y: scroll
+
+            &::-webkit-scrollbar
+                background: #ffffff00
+
+            &::-webkit-scrollbar-thumb
+                background: white
+                margin-left: 5px 
+            
+            li
+                @include display-direc(flex, null, null, center)
+                padding-left: 10px
+                list-style: none
+
+            .luta
+                height: 2rem
+                color: #000
+
+            .round
+                height: 2rem
+                color: #000
+                
+            .Samurai
+                color: #0046be
+
+            .Monstro
+                color: #ce0000
+        
+    .statistics
+        @include display-direc(flex, column, center, center)
+        @include size--marg(20%, min-content, 1rem 0 0 1rem, 0 1rem)
+        @extend %comp-externo
+        font-size: 1.5rem
+        transition-duration: 1s
+        opacity: 0
+
+        h1
+            @include size--marg(null, min-content, 0.5rem 0 0 0, null)
+            font-size: 1.7rem
+
+        .divPlacar
+            @include display-direc(flex, row, null, null)
+            margin: 0.4rem 0
+
+            .charPlacar, .monsterPlacar
+                @include display-direc(flex, column, center, center)
+                width: min-content
+                
+                label
+                    @include size--marg(90%, 70%, 0.1rem, 0.3rem)
+                    @extend %comp-interno
+                    text-align: center
+
+                    #placar
+                        @include display-direc(flex, null, center, null)
+                        @include size--marg(100%, 100%, 0.2rem 0, null)
+                        transition-duration: 2s
+
+            strong
+                @include display-direc(flex, null, null, center)
+                margin: 0 15%
+
+.startSize
+    @include display-direc(flex, null, center, center)
+    @include size--marg(100%, 100%, null, null)   
+    position: fixed
+    background: #00000074
+    z-index: 99
+
+    .startDiv
+        @include display-direc(flex, column, space-around, center)
+        @include size--marg(50%, 30%, null, null)
+        background: #005213
+
+        .startInfo
+            @include display-direc(flex, column, null, null)
+            width: 90%
+
+        .start
+                @extend %button-style

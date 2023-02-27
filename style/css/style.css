@@ -1,0 +1,594 @@
+.arena .bot, .arena .player {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 90% 70%;
+  background-position: center;
+  opacity: 0;
+}
+
+.startSize .startDiv .start, .containerB .buttonsAndLog .attacks .revanche, .containerB .buttonsAndLog .attacks .attackButton1 {
+  border: 1px solid rgba(0, 0, 0, 0.7098039216);
+  background-color: #c8c8c8;
+  box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.7098039216), inset 2px 2px 2px rgba(255, 255, 255, 0.9607843137);
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.containerB .buttonsAndLog .attacks .revanche:disabled, .containerB .buttonsAndLog .attacks .attackButton1:disabled {
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.7098039216), inset -2px -2px 1px rgba(255, 255, 255, 0.9607843137);
+  cursor: default;
+}
+
+.containerB .statistics, .containerB .buttonsAndLog {
+  background-color: #6f6f6f;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px #000, inset 0 0 5px #bababa;
+}
+
+.containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label, .containerB .buttonsAndLog .log {
+  background-color: #c8c8c8;
+  box-shadow: inset 0 0 5px #000, 0 0 5px #bababa;
+}
+
+.rounds, .info .status .buffer p, .info {
+  background-color: #9c9c9c;
+  border: 1px solid #000000;
+  box-shadow: inset 0 0 5px #e6e6e6;
+}
+
+@keyframes attack {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  20% {
+    background-image: url("../../img/samurai-move.png");
+    opacity: 1;
+  }
+  25% {
+    left: 35%;
+    background-image: url("../../img/samurai-attack.png");
+    opacity: 1;
+  }
+  50% {
+    left: 35%;
+    background-image: url("../../img/samurai-attack1.png");
+    opacity: 1;
+  }
+  65% {
+    left: 35%;
+    background-image: url("../../img/samurai-attack2.png");
+    opacity: 1;
+  }
+  80% {
+    left: 35%;
+    opacity: 0;
+  }
+  90% {
+    background-image: url("../../img/samurai.png");
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes defen {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  25% {
+    background-image: url("../../img/samurai-defen.png");
+    opacity: 1;
+  }
+  50% {
+    background-image: url("../../img/samurai-defen1.png");
+  }
+  75% {
+    background-image: url("../../img/samurai-defen2.png");
+    opacity: 1;
+  }
+  85% {
+    background-image: url("../../img/samurai-defen3.png");
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    background-image: url("../../img/samurai.png");
+    opacity: 0.5;
+  }
+}
+@keyframes damage {
+  0% {
+    background-image: url("../../img/samurai.png");
+  }
+  25% {
+    background-image: url("../../img/samurai-damage.png");
+  }
+  50% {
+    background-image: url("../../img/samurai.png");
+  }
+  75% {
+    background-image: url("../../img/samurai-damage.png");
+  }
+  100% {
+    background-image: url("../../img/samurai.png");
+  }
+}
+@keyframes playerStop {
+  0% {
+    background-image: url("../../img/samurai-resp.png");
+  }
+  25% {
+    background-image: url("../../img/samurai-resp1.png");
+  }
+  50% {
+    background-image: url("../../img/samurai-resp.png");
+  }
+  75% {
+    background-image: url("../../img/samurai-resp.png");
+  }
+  100% {
+    background-image: url("../../img/samurai-resp.png");
+  }
+}
+@keyframes samuraiLose {
+  0% {
+    right: 0%;
+    bottom: 0%;
+    opacity: 0.2;
+  }
+  50% {
+    right: 10%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  100% {
+    right: 15%;
+    bottom: 0%;
+    opacity: 0;
+  }
+}
+@keyframes samuraiRevanche {
+  0% {
+    right: 15%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  50% {
+    right: 10%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+@keyframes minotauroDamage {
+  0% {
+    background-image: url("../../img/minotauro1.png");
+  }
+  25% {
+    background-image: url("../../img/minotauro-damage.png");
+  }
+  50% {
+    background-image: url("../../img/minotauro1.png");
+  }
+  75% {
+    background-image: url("../../img/minotauro-damage.png");
+  }
+  100% {
+    background-image: url("../../img/minotauro1.png");
+  }
+}
+@keyframes minotauroAttack {
+  0% {
+    right: 0%;
+    bottom: 0%;
+    opacity: 0.2;
+  }
+  25% {
+    right: 15%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  40% {
+    right: 35%;
+    bottom: 0%;
+    background-image: url("../../img/minotauro.png");
+    opacity: 0.2;
+  }
+  50% {
+    right: 35%;
+    bottom: 0;
+    background-image: url("../../img/minotauro-attack1.png");
+    opacity: 1;
+  }
+  60% {
+    right: 35%;
+    background-image: url("../../img/minotauro-attack2.png");
+  }
+  70% {
+    right: 35%;
+    bottom: 0%;
+    background-image: url("../../img/minotauro-attack3.png");
+    opacity: 1;
+  }
+  80% {
+    right: 15%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  95% {
+    right: 0%;
+    bottom: 0%;
+    opacity: 0.2;
+  }
+  100% {
+    background-image: url("../../img/minotauro.png");
+    opacity: 1;
+  }
+}
+@keyframes minotauroDefen {
+  0% {
+    background-image: url("../../img/minotauro.png");
+  }
+  25% {
+    background-image: url("../../img/minotauro-attack.png");
+  }
+  50% {
+    background-image: url("../../img/minotauro-attack.png");
+  }
+  75% {
+    background-image: url("../../img/minotauro-attack.png");
+  }
+  100% {
+    background-image: url("../../img/minotauro.png");
+  }
+}
+@keyframes monsterStop {
+  0% {
+    background-image: url("../../img/minotauro.png");
+  }
+  25% {
+    background-image: url("../../img/minotauro1.png");
+  }
+  50% {
+    background-image: url("../../img/minotauro.png");
+  }
+  75% {
+    background-image: url("../../img/minotauro1.png");
+  }
+  100% {
+    background-image: url("../../img/minotauro.png");
+  }
+}
+@keyframes monsterLose {
+  0% {
+    left: 0%;
+    bottom: 0%;
+    opacity: 0.2;
+  }
+  50% {
+    left: 10%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  100% {
+    left: 15%;
+    bottom: 0%;
+    opacity: 0;
+  }
+}
+@keyframes minotauroRevanche {
+  0% {
+    left: 15%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  50% {
+    left: 10%;
+    bottom: 40%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    background: #c8c8c8;
+    box-shadow: inset 0 0 5px #000, 0 0 5px #bababa;
+  }
+  25% {
+    background: #000;
+    box-shadow: 0 0 5px #000, inset 0 0 5px #bababa;
+  }
+  50% {
+    background: #000;
+    box-shadow: 0 0 5px #000, inset 0 0 5px #bababa;
+  }
+  60% {
+    background: #c8c8c8;
+    box-shadow: inset 0 0 5px #000, 0 0 5px #bababa;
+  }
+  75% {
+    background: #000;
+    box-shadow: 0 0 5px #000, inset 0 0 5px #bababa;
+  }
+  100% {
+    background: #c8c8c8;
+    box-shadow: inset 0 0 5px #000, 0 0 5px #bababa;
+  }
+}
+html, body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "VT323", monospace;
+  font-size: 1.1rem;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  background-color: #3C202F;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/montain.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.fightArea {
+  display: flex;
+  margin: 5px;
+  gap: 20px;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+#char,
+#monster {
+  width: 100%;
+  flex: 1;
+}
+
+.lifebar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(115, 115, 115, 0.6039215686);
+  backdrop-filter: blur(13.5px);
+  border: 1px solid #000000;
+}
+.lifebar .bar {
+  width: 100%;
+  height: inherit;
+  background-color: red;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: inherit;
+  gap: 10px;
+  border-top: none;
+}
+.info strong {
+  margin-left: 0.5rem;
+}
+.info .status {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: auto;
+}
+.info .status .buffer {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  display: none;
+  border-radius: 50%;
+}
+.info .status .buffer p {
+  width: 21rem;
+  margin: 0;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+}
+.info .status .buffer summary {
+  opacity: 0;
+}
+.info .status #recup {
+  background-color: green;
+}
+
+.rounds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+
+.arena {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.arena .player, .arena .bot {
+  width: 98px;
+  height: 98px;
+  margin: 0;
+  padding: 0;
+}
+.arena .player {
+  background-image: url("../../img/samurai.png");
+  animation: playerStop 5s infinite;
+}
+.arena .bot {
+  background-image: url("../../img/minotauro1.png");
+  animation: monsterStop 5s infinite;
+}
+
+.containerB {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 1rem;
+}
+.containerB .buttonsAndLog {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: max-content;
+  margin: 1rem 0;
+  opacity: 0;
+  transition-duration: 1s;
+}
+.containerB .buttonsAndLog .attacks {
+  width: 40%;
+  margin: 0.5rem;
+}
+.containerB .buttonsAndLog .attacks .attackButton1 {
+  transition-duration: 0.2s;
+}
+.containerB .buttonsAndLog .attacks .revanche {
+  transition-duration: 0.2s;
+}
+.containerB .buttonsAndLog .log {
+  height: 180px;
+  margin: 10px;
+  padding: 0;
+  overflow-y: scroll;
+}
+.containerB .buttonsAndLog .log::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0);
+}
+.containerB .buttonsAndLog .log::-webkit-scrollbar-thumb {
+  background: white;
+  margin-left: 5px;
+}
+.containerB .buttonsAndLog .log li {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  list-style: none;
+}
+.containerB .buttonsAndLog .log .luta {
+  height: 2rem;
+  color: #000;
+}
+.containerB .buttonsAndLog .log .round {
+  height: 2rem;
+  color: #000;
+}
+.containerB .buttonsAndLog .log .Samurai {
+  color: #0046be;
+}
+.containerB .buttonsAndLog .log .Monstro {
+  color: #ce0000;
+}
+.containerB .statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: min-content;
+  margin: 1rem 0 0 1rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  transition-duration: 1s;
+  opacity: 0;
+}
+.containerB .statistics h1 {
+  height: min-content;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.7rem;
+}
+.containerB .statistics .divPlacar {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  margin: 0.4rem 0;
+}
+.containerB .statistics .divPlacar .charPlacar, .containerB .statistics .divPlacar .monsterPlacar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+}
+.containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  width: 90%;
+  height: 70%;
+  margin: 0.1rem;
+  padding: 0.3rem;
+  text-align: center;
+}
+.containerB .statistics .divPlacar .charPlacar label #placar, .containerB .statistics .divPlacar .monsterPlacar label #placar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0.2rem 0;
+  transition-duration: 2s;
+}
+.containerB .statistics .divPlacar strong {
+  display: flex;
+  align-items: center;
+  margin: 0 15%;
+}
+
+.startSize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4549019608);
+  z-index: 99;
+}
+.startSize .startDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+  background: #005213;
+}
+.startSize .startDiv .startInfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */
