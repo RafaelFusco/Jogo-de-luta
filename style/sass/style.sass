@@ -67,9 +67,11 @@ html, body
             p
                 @include size--marg(21rem, null, 0, 0.3rem)
                 @extend %info-round
+                position: relative
+                right: 150px
                 font-size: 0.8rem
 
-            summary
+            summary           
                 opacity: 0   
             
         #recup
@@ -179,8 +181,8 @@ html, body
             font-size: 1.7rem
 
         .divPlacar
-            @include display-direc(flex, row, null, null)
-            margin: 0.4rem 0
+            @include display-direc(flex, row, center, null)
+            @include size--marg(100%, null, 0.4rem 0, null)
 
             .charPlacar, .monsterPlacar
                 @include display-direc(flex, column, center, center)

@@ -416,6 +416,8 @@ html, body {
   width: 21rem;
   margin: 0;
   padding: 0.3rem;
+  position: relative;
+  right: 150px;
   font-size: 0.8rem;
 }
 .info .status .buffer summary {
@@ -544,6 +546,8 @@ html, body {
 .containerB .statistics .divPlacar {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
   margin: 0.4rem 0;
 }
 .containerB .statistics .divPlacar .charPlacar, .containerB .statistics .divPlacar .monsterPlacar {

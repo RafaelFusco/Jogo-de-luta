@@ -1,20 +1,19 @@
 @import '_utilities'
 
-.fightArea
-    @include mobile-4
-        gap: 5px
-
-    @include mobile-5
-        gap: 5px
-
-    @include mobile-6
-        gap: 5px
-
-    @include mobile-7
-        gap: 5px
-
 #char,
 #monster
+    @include mobile-0
+        font-size: 1rem
+
+    @include mobile-1
+        font-size: 1rem
+
+    @include mobile-2
+        font-size: 1rem
+
+    @include mobile-3
+        font-size: 1rem
+
     @include mobile-4
         font-size: 0.5rem
 
@@ -27,7 +26,88 @@
     @include mobile-7
         font-size: 0.5rem
 
+.info
+    .status
+        .buffer
+            @include mobile-4
+                width: 5px
+                height: 5px
+
+            @include mobile-5
+                width: 5px
+                height: 5px
+
+            @include mobile-6
+                width: 5px
+                height: 5px
+
+            @include mobile-7
+                width: 5px
+                height: 5px     
+
+            p
+                @include mobile-0
+                    width: 15rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 1rem
+
+                @include mobile-1
+                    width: 15rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 1rem
+
+                @include mobile-2
+                    width: 15rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 1rem
+
+                @include mobile-3
+                    width: 13rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 1rem
+
+                @include mobile-4
+                    width: 7rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 0.5rem
+
+                @include mobile-5
+                    width: 7rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 0.5rem
+
+                @include mobile-6
+                    width: 7rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 0.5rem
+
+                @include mobile-7
+                    width: 4rem 
+                    margin: 0.5rem 0
+                    right: 80px
+                    font-size: 0.5rem
+
+
 .rounds
+    @include mobile-0
+        font-size: 1rem
+
+    @include mobile-1
+        font-size: 1rem
+
+    @include mobile-2
+        font-size: 1rem
+
+    @include mobile-3
+        font-size: 1rem
+
     @include mobile-4
         font-size: 0.5rem
 
@@ -43,6 +123,22 @@
 .arena
 
     .player, .bot
+        @include mobile-0
+            width: 98px
+            height: 98px  
+
+        @include mobile-1
+            width: 98px
+            height: 98px   
+
+        @include mobile-2
+            width: 98px
+            height: 98px   
+
+        @include mobile-3
+            width: 98px
+            height: 98px   
+        
         @include mobile-4
             width: 78px
             height: 78px   
@@ -60,6 +156,18 @@
             height: 78px
 
 .chao
+        @include mobile-0
+            height: 50px  
+
+        @include mobile-1
+            height: 50px  
+
+        @include mobile-2
+            height: 40px
+
+        @include mobile-3
+            height: 40px
+
         @include mobile-4
             height: 30px  
 
@@ -75,8 +183,20 @@
 .containerB
 
     .buttonsAndLog
+        @include mobile-0
+            width: 230px
+
+        @include mobile-1
+            width: 230px
+
+        @include mobile-2
+            width: 230px
+
+        @include mobile-3
+            width: 230px
+
         @include mobile-4
-            width: 125px
+            width: 190px
 
         @include mobile-5
             width: 175px
@@ -88,6 +208,18 @@
             width: 125px
 
         .attacks
+            @include mobile-1
+                width: max-content
+                margin: 0.2rem 0.5rem
+
+            @include mobile-2
+                width: max-content
+                margin: 0.2rem 0.5rem
+
+            @include mobile-3
+                width: max-content
+                margin: 0.2rem 0.5rem
+
             @include mobile-4
                 width: max-content
                 margin: 0.2rem 0.5rem
@@ -131,8 +263,20 @@
                     font-size: 0.7rem
             
         .log
+            @include mobile-0
+                width: 210px
+
+            @include mobile-1
+                width: 210px
+ 
+            @include mobile-2
+                width: 210px
+ 
+            @include mobile-3
+                width: 210px
+
             @include mobile-4
-                width: 100px
+                width: 170px
  
             @include mobile-5
                 width: 150px
@@ -157,12 +301,32 @@
                     font-size: 0.6rem
 
     .statistics
+        @include mobile-0
+            width: 28%
+            padding: 0 0.5rem
+
+        @include mobile-1
+            width: 28%
+            padding: 0 0.5rem
+        
+        @include mobile-2
+            width: 28%
+            padding: 0 0.5rem
+        
+        @include mobile-3
+            width: 30%
+            padding: 0 0.5rem
+
+        @include mobile-680
+            width: 35%
+            padding: 0 0.5rem
+
         @include mobile-4
-            width: 100%
+            width: 35%
             padding: 0 0.5rem
         
         @include mobile-5
-            width: 30%
+            width: 35%
             padding: 0 0.5rem
         
         @include mobile-6
@@ -174,8 +338,20 @@
             padding: 0 0.5rem
         
         h1
+            @include mobile-1
+                font-size: 1.5rem
+ 
+            @include mobile-2
+                font-size: 1.5rem
+ 
+            @include mobile-3
+                font-size: 1.5rem
+
+            @include mobile-680
+                font-size: 1.5rem
+                
             @include mobile-4
-                font-size: 0.9rem
+                font-size: 1.2rem
  
             @include mobile-5
                 font-size: 0.9rem
@@ -191,9 +367,29 @@
             .charPlacar, .monsterPlacar
                 
                 label
+                    @include mobile-0
+                        width: 90%
+                        font-size: 1.5rem
+
+                    @include mobile-1
+                        width: 90%
+                        font-size: 1.5rem
+                        
+                    @include mobile-2
+                        width: 90%
+                        font-size: 1.5rem
+                        
+                    @include mobile-3
+                        width: 90%
+                        font-size: 1.5rem
+
+                    @include mobile-680
+                        width: 90%
+                        font-size: 1.5rem
+
                     @include mobile-4
                         width: 80%
-                        font-size: 0.6rem
+                        font-size: 1.2rem
                         
                     @include mobile-5
                         width: 80%
@@ -208,9 +404,33 @@
                         font-size: 0.6rem
                         
             strong
+                @include mobile--1
+                    margin: 0 0.8rem
+                    font-size: 1.5rem
+
+                @include mobile-0
+                    margin: 0 0.8rem
+                    font-size: 1.5rem
+
+                @include mobile-1
+                    margin: 0 0.8rem
+                    font-size: 1.5rem
+ 
+                @include mobile-2
+                    margin: 0 0.8rem
+                    font-size: 1.5rem
+ 
+                @include mobile-3
+                    margin: 0 0.8rem
+                    font-size: 1.5rem
+
+                @include mobile-680
+                    margin: 0 0.8rem
+                    font-size: 1.5rem
+
                 @include mobile-4
-                    margin: 0 0.3rem
-                    font-size: 0.5rem
+                    margin: 0 0.5rem
+                    font-size: 1rem
  
                 @include mobile-5
                     margin: 0 0.3rem

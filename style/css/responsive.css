@@ -1,25 +1,28 @@
-@media (max-width: 540px) {
-  .fightArea {
-    gap: 5px;
+@media (max-width: 1024px) and (max-height: 600px) {
+  #char,
+#monster {
+    font-size: 1rem;
   }
 }
-@media (max-width: 425px) {
-  .fightArea {
-    gap: 5px;
+@media (max-width: 920px) {
+  #char,
+#monster {
+    font-size: 1rem;
   }
 }
-@media (max-width: 340px) {
-  .fightArea {
-    gap: 5px;
+@media (max-width: 840px) and (max-height: 1180px) {
+  #char,
+#monster {
+    font-size: 1rem;
   }
 }
-@media (max-width: 280px) {
-  .fightArea {
-    gap: 5px;
+@media (max-width: 780px) and (max-height: 1024px) {
+  #char,
+#monster {
+    font-size: 1rem;
   }
 }
-
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   #char,
 #monster {
     font-size: 0.5rem;
@@ -44,7 +47,116 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
+  .info .status .buffer {
+    width: 5px;
+    height: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .info .status .buffer {
+    width: 5px;
+    height: 5px;
+  }
+}
+@media (max-width: 340px) {
+  .info .status .buffer {
+    width: 5px;
+    height: 5px;
+  }
+}
+@media (max-width: 280px) {
+  .info .status .buffer {
+    width: 5px;
+    height: 5px;
+  }
+}
+@media (max-width: 1024px) and (max-height: 600px) {
+  .info .status .buffer p {
+    width: 15rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 920px) {
+  .info .status .buffer p {
+    width: 15rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .info .status .buffer p {
+    width: 15rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .info .status .buffer p {
+    width: 13rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 580px) {
+  .info .status .buffer p {
+    width: 7rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .info .status .buffer p {
+    width: 7rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .info .status .buffer p {
+    width: 7rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 280px) {
+  .info .status .buffer p {
+    width: 4rem;
+    margin: 0.5rem 0;
+    right: 80px;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .rounds {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 920px) {
+  .rounds {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .rounds {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .rounds {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 580px) {
   .rounds {
     font-size: 0.5rem;
   }
@@ -65,7 +177,31 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1024px) and (max-height: 600px) {
+  .arena .player, .arena .bot {
+    width: 98px;
+    height: 98px;
+  }
+}
+@media (max-width: 920px) {
+  .arena .player, .arena .bot {
+    width: 98px;
+    height: 98px;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .arena .player, .arena .bot {
+    width: 98px;
+    height: 98px;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .arena .player, .arena .bot {
+    width: 98px;
+    height: 98px;
+  }
+}
+@media (max-width: 580px) {
   .arena .player, .arena .bot {
     width: 78px;
     height: 78px;
@@ -90,7 +226,27 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1024px) and (max-height: 600px) {
+  .chao {
+    height: 50px;
+  }
+}
+@media (max-width: 920px) {
+  .chao {
+    height: 50px;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .chao {
+    height: 40px;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .chao {
+    height: 40px;
+  }
+}
+@media (max-width: 580px) {
   .chao {
     height: 30px;
   }
@@ -111,9 +267,29 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .containerB .buttonsAndLog {
-    width: 125px;
+    width: 230px;
+  }
+}
+@media (max-width: 920px) {
+  .containerB .buttonsAndLog {
+    width: 230px;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .buttonsAndLog {
+    width: 230px;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .containerB .buttonsAndLog {
+    width: 230px;
+  }
+}
+@media (max-width: 580px) {
+  .containerB .buttonsAndLog {
+    width: 190px;
   }
 }
 @media (max-width: 425px) {
@@ -131,7 +307,25 @@
     width: 125px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 920px) {
+  .containerB .buttonsAndLog .attacks {
+    width: max-content;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .buttonsAndLog .attacks {
+    width: max-content;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .containerB .buttonsAndLog .attacks {
+    width: max-content;
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media (max-width: 580px) {
   .containerB .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
@@ -155,7 +349,7 @@
     margin: 0.2rem 0.5rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .containerB .buttonsAndLog .attacks .attackButton1 {
     font-size: 0.7rem;
   }
@@ -175,7 +369,7 @@
     font-size: 0.7rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .containerB .buttonsAndLog .attacks .revanche {
     font-size: 0.7rem;
   }
@@ -195,9 +389,29 @@
     font-size: 0.7rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .containerB .buttonsAndLog .log {
-    width: 100px;
+    width: 210px;
+  }
+}
+@media (max-width: 920px) {
+  .containerB .buttonsAndLog .log {
+    width: 210px;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .buttonsAndLog .log {
+    width: 210px;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .containerB .buttonsAndLog .log {
+    width: 210px;
+  }
+}
+@media (max-width: 580px) {
+  .containerB .buttonsAndLog .log {
+    width: 170px;
   }
 }
 @media (max-width: 425px) {
@@ -215,7 +429,7 @@
     width: 100px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .containerB .buttonsAndLog .log li {
     font-size: 0.6rem;
   }
@@ -235,18 +449,48 @@
     font-size: 0.6rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .containerB .statistics {
-    width: 100%;
+    width: 28%;
     padding: 0 0.5rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 920px) {
+  .containerB .statistics {
+    width: 28%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .statistics {
+    width: 28%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
   .containerB .statistics {
     width: 30%;
     padding: 0 0.5rem;
   }
 }
+@media (max-width: 690px) {
+  .containerB .statistics {
+    width: 35%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 580px) {
+  .containerB .statistics {
+    width: 35%;
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .containerB .statistics {
+    width: 35%;
+    padding: 0 0.5rem;
+  }
+}
 @media (max-width: 340px) {
   .containerB .statistics {
     width: 100%;
@@ -259,9 +503,29 @@
     padding: 0 0.5rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 920px) {
   .containerB .statistics h1 {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .statistics h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .containerB .statistics h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 690px) {
+  .containerB .statistics h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 580px) {
+  .containerB .statistics h1 {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 425px) {
@@ -279,10 +543,40 @@
     font-size: 0.9rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 1024px) and (max-height: 600px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 690px) {
+  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 580px) {
   .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
     width: 80%;
-    font-size: 0.6rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 425px) {
@@ -303,10 +597,46 @@
     font-size: 0.6rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 1200px) {
   .containerB .statistics .divPlacar strong {
-    margin: 0 0.3rem;
-    font-size: 0.5rem;
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1024px) and (max-height: 600px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 840px) and (max-height: 1180px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 1024px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 690px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 580px) {
+  .containerB .statistics .divPlacar strong {
+    margin: 0 0.5rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
