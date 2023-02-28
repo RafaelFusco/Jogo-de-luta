@@ -15,10 +15,10 @@
         <div class="startDiv">
             <div class="startInfo">
                 <label for="char">Seu nome</label>
-                <input id="name1" type="text" maxlength="10" placeholder="Samurai">
+                <input id="name1" type="text" maxlength="7" placeholder="Samurai">
                 
                 <label for="monster">Seu inimigo</label>
-                <input id="name2" type="text" maxlength="10" placeholder="Minotauro">
+                <input id="name2" type="text" maxlength="7" placeholder="Minotauro">
             </div>
             <button class="start" onclick="start()">Iniciar</button>
         </div>        
@@ -85,14 +85,14 @@
                 <h1>Placar</h1>
                 <div class="divPlacar">
                     <div class="charPlacar">
-                        <label>Samurai</label>
+                        <label id="name1">Samurai</label>
                         <label id="placar"></label>
                     </div>
                     
                     <strong>X</strong>
 
                     <div class="monsterPlacar">
-                        <label>Monster</label>
+                        <label id="name2">Monster</label>
                         <label id="placar"></label>
                     </div>
                 </div>

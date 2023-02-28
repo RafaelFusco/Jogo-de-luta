@@ -236,7 +236,7 @@ class Stage {
 
                 setTimeout(() => {
                     placar2++
-                    monsterPlacar.innerHTML = placar2 // Linha 267
+                    monsterPlacar.innerHTML = placar2 // Linha 284
                 }, 500);
 
                 setTimeout(() => { 
@@ -253,7 +253,7 @@ class Stage {
 
                 setTimeout(() => {
                     placar1++ 
-                    charPlacar.innerHTML = placar1 // Linha 266
+                    charPlacar.innerHTML = placar1 // Linha 283
                 }, 500);
                 
                 setTimeout(() => {
@@ -265,10 +265,10 @@ class Stage {
 
         if(attacking.life <= 0 || attacked.life <= 0) {
             if (attacking.life <= 0) {
-                this.log.addMessage(`${attacked.name} derrotou ${attacking.name}`)
+                this.log.addMessage(`${attacked.name} derrotou ${attacking.name}`, attacked.name)
             }
             if (attacked.life <= 0) {
-                this.log.addMessage(`${attacking.name} derrotou ${attacked.name}`)
+                this.log.addMessage(`${attacking.name} derrotou ${attacked.name}`, attacking.name)
             }
             setTimeout(() => {
                 document.querySelector('.revanche').disabled = false
@@ -285,7 +285,6 @@ let placar2 = 0
 
 class Log {
     list = []
-    ii = 0
 
     constructor(listEl) {
         this.listEl = listEl
@@ -298,7 +297,7 @@ class Log {
     render(playerName) {
 
         this.listEl.innerHTML += `<li class="${playerName}">${this.list[ii]}</li>`
-        
+
         ii++
     }
 }
@@ -361,18 +360,24 @@ function attackButtonVisibility(VH, time) {
     }, time);
 }
 function start() {
-    let input1 = document.querySelector('#name1')
-    let input2 = document.querySelector('#name2')
+    const input1 = document.querySelector('#name1')
+    const input2 = document.querySelector('#name2')
 
+    let inputPlacar1 = document.querySelector('.charPlacar #name1')
+    let inputPlacar2 = document.querySelector('.monsterPlacar #name2')
+    
     let name1 = input1.value
     let name2 = input2.value
 
-    if (name1.includes(' ')) {
-        name1 = null
+    if (name1.includes(' ') || name1 == '') {
+        name1 = 'Samurai'
     }
-    if (name2.includes(' ')) {
-        name2 = null
+    if (name2.includes(' ') || name2 == '') {
+        name2 = 'Minotauro'
     }
+
+    inputPlacar1.innerHTML = name1
+    inputPlacar2.innerHTML = name2
 
     game(name1, name2)
 
@@ -383,3 +388,7 @@ function start() {
     samuraiRevanche()
     minotauroRevanche()
 }
+
+
+    
+

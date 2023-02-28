@@ -21,7 +21,7 @@
   cursor: default;
 }
 
-.containerB .statistics, .containerB .buttonsAndLog {
+.startSize .startDiv, .containerB .statistics, .containerB .buttonsAndLog {
   background-color: #6f6f6f;
   border: 1px solid black;
   box-shadow: 0 2px 5px #000, inset 0 0 5px #bababa;
@@ -521,7 +521,7 @@ html, body {
   margin: 0.2rem 0;
   color: #0046be;
 }
-.containerB .buttonsAndLog .log .Monstro {
+.containerB .buttonsAndLog .log .Minotauro {
   margin: 0.2rem 0;
   color: #ce0000;
 }
@@ -595,7 +595,6 @@ html, body {
   align-items: center;
   width: 50%;
   height: 30%;
-  background: #005213;
 }
 .startSize .startDiv .startInfo {
   display: flex;
