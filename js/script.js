@@ -1,9 +1,10 @@
 
-function game() {
+function game(name1, name2) {
+
     let log = new Log(document.querySelector('.log'))
 
-    let char = new Knight('Samurai')
-    let monster = new BigMonster('Monstro')
+    let char = new Knight(name1)
+    let monster = new BigMonster(name2)
 
     const stage = new Stage(
         char,
@@ -16,4 +17,5 @@ function game() {
     )
     stage.config()
 }
+
 

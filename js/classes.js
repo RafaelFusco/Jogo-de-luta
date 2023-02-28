@@ -19,7 +19,7 @@ class Character {
 
 class Knight extends Character {
     constructor(name) {
-        super(name || 'Knight')
+        super(name || 'Samurai')
         this.life = 100
         this.attack = 10
         this.defense = 8
@@ -29,7 +29,7 @@ class Knight extends Character {
 
 class BigMonster extends Character {
     constructor(name) {
-        super(name || 'Big Monster')
+        super(name || 'Minotauro')
         this.life = 120
         this.attack = 10
         this.defense = 7
@@ -361,7 +361,21 @@ function attackButtonVisibility(VH, time) {
     }, time);
 }
 function start() {
-    game()
+    let input1 = document.querySelector('#name1')
+    let input2 = document.querySelector('#name2')
+
+    let name1 = input1.value
+    let name2 = input2.value
+
+    if (name1.includes(' ')) {
+        name1 = null
+    }
+    if (name2.includes(' ')) {
+        name2 = null
+    }
+
+    game(name1, name2)
+
     document.querySelector('.startSize').style.visibility = 'hidden'
     document.querySelector('.fightArea').style.opacity = "1"
     document.querySelector('.buttonsAndLog').style.opacity = "1"
