@@ -6,7 +6,7 @@
   opacity: 0;
 }
 
-.startSize .startDiv .start, .containerB .buttonsAndLog .attacks .revanche, .containerB .buttonsAndLog .attacks .attackButton1 {
+.startSize .startDiv .start, .container3 .buttonsAndLog .attacks .revanche, .container3 .buttonsAndLog .attacks .attackButton1 {
   border: 1px solid rgba(0, 0, 0, 0.7098039216);
   background-color: #c8c8c8;
   box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.7098039216), inset 2px 2px 2px rgba(255, 255, 255, 0.9607843137);
@@ -15,19 +15,19 @@
   cursor: pointer;
 }
 
-.containerB .buttonsAndLog .attacks .revanche:disabled, .containerB .buttonsAndLog .attacks .attackButton1:disabled {
+.container3 .buttonsAndLog .attacks .revanche:disabled, .container3 .buttonsAndLog .attacks .attackButton1:disabled {
   border: 1px solid rgba(255, 255, 255, 0);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.7098039216), inset -2px -2px 1px rgba(255, 255, 255, 0.9607843137);
   cursor: default;
 }
 
-.startSize .startDiv, .containerB .statistics, .containerB .buttonsAndLog {
+.startSize .startDiv, .container3 .statistics, .container3 .buttonsAndLog {
   background-color: #6f6f6f;
   border: 1px solid black;
   box-shadow: 0 2px 5px #000, inset 0 0 5px #bababa;
 }
 
-.containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label, .containerB .buttonsAndLog .log {
+.container3 .statistics .divPlacar .charPlacar label, .container3 .statistics .divPlacar .monsterPlacar label, .container3 .buttonsAndLog .log {
   background-color: #c8c8c8;
   box-shadow: inset 0 0 5px #000, 0 0 5px #bababa;
 }
@@ -465,13 +465,13 @@ html, body {
   background-size: 100% 100%;
 }
 
-.containerB {
+.container3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 1rem;
 }
-.containerB .buttonsAndLog {
+.container3 .buttonsAndLog {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -480,52 +480,52 @@ html, body {
   opacity: 0;
   transition-duration: 1s;
 }
-.containerB .buttonsAndLog .attacks {
+.container3 .buttonsAndLog .attacks {
   width: 100%;
   margin: 0.5rem;
 }
-.containerB .buttonsAndLog .attacks .attackButton1 {
+.container3 .buttonsAndLog .attacks .attackButton1 {
   transition-duration: 0.2s;
 }
-.containerB .buttonsAndLog .attacks .revanche {
+.container3 .buttonsAndLog .attacks .revanche {
   transition-duration: 0.2s;
 }
-.containerB .buttonsAndLog .log {
+.container3 .buttonsAndLog .log {
   height: 180px;
   margin: 10px;
   padding: 0;
   overflow-y: scroll;
 }
-.containerB .buttonsAndLog .log::-webkit-scrollbar {
+.container3 .buttonsAndLog .log::-webkit-scrollbar {
   background: rgba(255, 255, 255, 0);
 }
-.containerB .buttonsAndLog .log::-webkit-scrollbar-thumb {
+.container3 .buttonsAndLog .log::-webkit-scrollbar-thumb {
   background: white;
   margin-left: 5px;
 }
-.containerB .buttonsAndLog .log li {
+.container3 .buttonsAndLog .log li {
   display: flex;
   align-items: center;
   padding-left: 10px;
   list-style: none;
 }
-.containerB .buttonsAndLog .log .luta {
+.container3 .buttonsAndLog .log .luta {
   margin: 0.5rem 0;
   color: #000;
 }
-.containerB .buttonsAndLog .log .round {
+.container3 .buttonsAndLog .log .round {
   margin: 0.5rem 0;
   color: #000;
 }
-.containerB .buttonsAndLog .log .Samurai {
+.container3 .buttonsAndLog .log .Samurai {
   margin: 0.2rem 0;
   color: #0046be;
 }
-.containerB .buttonsAndLog .log .Minotauro {
+.container3 .buttonsAndLog .log .Minotauro {
   margin: 0.2rem 0;
   color: #ce0000;
 }
-.containerB .statistics {
+.container3 .statistics {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -538,33 +538,33 @@ html, body {
   transition-duration: 1s;
   opacity: 0;
 }
-.containerB .statistics h1 {
+.container3 .statistics h1 {
   height: min-content;
   margin: 0.5rem 0 0 0;
   font-size: 1.7rem;
 }
-.containerB .statistics .divPlacar {
+.container3 .statistics .divPlacar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
   margin: 0.4rem 0;
 }
-.containerB .statistics .divPlacar .charPlacar, .containerB .statistics .divPlacar .monsterPlacar {
+.container3 .statistics .divPlacar .charPlacar, .container3 .statistics .divPlacar .monsterPlacar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: min-content;
 }
-.containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+.container3 .statistics .divPlacar .charPlacar label, .container3 .statistics .divPlacar .monsterPlacar label {
   width: 90%;
   height: 70%;
   margin: 0.1rem;
   padding: 0.3rem;
   text-align: center;
 }
-.containerB .statistics .divPlacar .charPlacar label #placar, .containerB .statistics .divPlacar .monsterPlacar label #placar {
+.container3 .statistics .divPlacar .charPlacar label #placar, .container3 .statistics .divPlacar .monsterPlacar label #placar {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -572,7 +572,7 @@ html, body {
   margin: 0.2rem 0;
   transition-duration: 2s;
 }
-.containerB .statistics .divPlacar strong {
+.container3 .statistics .divPlacar strong {
   display: flex;
   align-items: center;
   margin: 0 15%;
