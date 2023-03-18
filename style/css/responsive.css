@@ -268,391 +268,400 @@
 }
 
 @media (max-width: 1024px) and (max-height: 600px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 230px;
   }
 }
 @media (max-width: 920px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 230px;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 230px;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 230px;
   }
 }
 @media (max-width: 580px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 190px;
   }
 }
 @media (max-width: 425px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 175px;
   }
 }
 @media (max-width: 340px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 125px;
   }
 }
 @media (max-width: 280px) {
-  .containerB .buttonsAndLog {
+  .container3 .buttonsAndLog {
     width: 125px;
   }
 }
 @media (max-width: 920px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .buttonsAndLog .attacks {
+  .container3 .buttonsAndLog .attacks {
     width: max-content;
     margin: 0.2rem 0.5rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .buttonsAndLog .attacks .attackButton1 {
+  .container3 .buttonsAndLog .attacks .attackButton1 {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .buttonsAndLog .attacks .attackButton1 {
+  .container3 .buttonsAndLog .attacks .attackButton1 {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .buttonsAndLog .attacks .attackButton1 {
+  .container3 .buttonsAndLog .attacks .attackButton1 {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .buttonsAndLog .attacks .attackButton1 {
+  .container3 .buttonsAndLog .attacks .attackButton1 {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .buttonsAndLog .attacks .revanche {
+  .container3 .buttonsAndLog .attacks .revanche {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .buttonsAndLog .attacks .revanche {
+  .container3 .buttonsAndLog .attacks .revanche {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .buttonsAndLog .attacks .revanche {
+  .container3 .buttonsAndLog .attacks .revanche {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .buttonsAndLog .attacks .revanche {
+  .container3 .buttonsAndLog .attacks .revanche {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 1024px) and (max-height: 600px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 210px;
   }
 }
 @media (max-width: 920px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 210px;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 210px;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 210px;
   }
 }
 @media (max-width: 580px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 170px;
   }
 }
 @media (max-width: 425px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 150px;
   }
 }
 @media (max-width: 340px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 100px;
   }
 }
 @media (max-width: 280px) {
-  .containerB .buttonsAndLog .log {
+  .container3 .buttonsAndLog .log {
     width: 100px;
   }
 }
 @media (max-width: 580px) {
-  .containerB .buttonsAndLog .log li {
+  .container3 .buttonsAndLog .log li {
     font-size: 0.6rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .buttonsAndLog .log li {
+  .container3 .buttonsAndLog .log li {
     font-size: 0.6rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .buttonsAndLog .log li {
+  .container3 .buttonsAndLog .log li {
     font-size: 0.6rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .buttonsAndLog .log li {
+  .container3 .buttonsAndLog .log li {
     font-size: 0.6rem;
   }
 }
 @media (max-width: 1024px) and (max-height: 600px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 28%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 920px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 28%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 28%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 30%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 690px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 35%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 35%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 35%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 100%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .statistics {
+  .container3 .statistics {
     width: 100%;
     padding: 0 0.5rem;
   }
 }
 @media (max-width: 920px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 690px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .statistics h1 {
+  .container3 .statistics h1 {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 1024px) and (max-height: 600px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 90%;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 920px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 90%;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 90%;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 90%;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 690px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 90%;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 80%;
     font-size: 1.2rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 80%;
     font-size: 0.6rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 80%;
     font-size: 0.6rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .statistics .divPlacar .charPlacar label, .containerB .statistics .divPlacar .monsterPlacar label {
+  .container3 .statistics .divPlacar .charPlacar label,
+.container3 .statistics .divPlacar .monsterPlacar label {
     width: 80%;
     font-size: 0.6rem;
   }
 }
 @media (max-width: 1200px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.8rem;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 1024px) and (max-height: 600px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.8rem;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 920px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.8rem;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 840px) and (max-height: 1180px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.8rem;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 780px) and (max-height: 1024px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.8rem;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 690px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.8rem;
     font-size: 1.5rem;
   }
 }
 @media (max-width: 580px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.5rem;
     font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.3rem;
     font-size: 0.5rem;
   }
 }
 @media (max-width: 340px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.3rem;
     font-size: 0.5rem;
   }
 }
 @media (max-width: 280px) {
-  .containerB .statistics .divPlacar strong {
+  .container3 .statistics .divPlacar strong {
     margin: 0 0.3rem;
     font-size: 0.5rem;
   }
